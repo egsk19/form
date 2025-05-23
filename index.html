@@ -1,12 +1,41 @@
-<div style="max-width: 640px; margin: 0 auto; padding: 20px; background-color: black;">
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSeOm7aldwmLU2IWk3EdnwmWpNXOahM7Njvb0Wo7poafC29WfA/viewform?embedded=true" 
-    width="100%" 
-    height="1250" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0"
-    style="display: block; border: none;">
-    Loading…
-  </iframe>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Embedded Google Form</title>
+  <style>
+    /* Set black background and white text for entire page */
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center; /* center horizontally */
+      padding: 20px;
+    }
+    /* Container to limit form width and add spacing */
+    .form-container {
+      max-width: 640px;
+      width: 100%;
+    }
+    iframe {
+      border: none;
+      display: block;
+      width: 100%;
+      height: 1250px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeOm7aldwmLU2IWk3EdnwmWpNXOahM7Njvb0Wo7poafC29WfA/viewform?embedded=true" 
+      loading="lazy">
+      Loading…
+    </iframe>
+  </div>
+</body>
+</html>
