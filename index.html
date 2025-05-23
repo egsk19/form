@@ -3,27 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Embedded Google Form</title>
+  <title>Embedded Google Form - Full Width</title>
   <style>
-    /* Body with black background and white text */
     body {
       background-color: #0b0b0f; /* very dark blackish */
-      color: #e0d8f7; /* light purple-ish text for readability */
+      color: #e0d8f7; /* light purple-ish text */
       margin: 0;
       padding: 40px 20px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      justify-content: center; /* center horizontally */
-      min-height: 100vh;
       box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
     }
 
-    /* Container for the form with purple border and subtle shadow */
+    /* Make container full width with padding */
     .form-container {
-      max-width: 640px;
       width: 100%;
-      background: #1e003d; /* dark purple background */
-      border: 2px solid #7f00ff; /* bright purple border */
+      max-width: 1200px; /* optional max width for readability on very large screens */
+      background: #1e003d; /* dark purple */
+      border: 2px solid #7f00ff; /* bright purple */
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(127, 0, 255, 0.6);
       padding: 20px;
@@ -33,14 +32,13 @@
     iframe {
       border: none;
       display: block;
-      width: 100%;
+      width: 100%; /* full width */
       height: 1250px;
       border-radius: 8px;
-      background-color: white; /* Google Form background */
+      background-color: white;
       box-shadow: 0 4px 15px rgba(127, 0, 255, 0.3);
     }
 
-    /* Optional: Heading style */
     h1 {
       color: #b399ff;
       text-align: center;
@@ -49,7 +47,6 @@
       text-shadow: 0 0 8px #7f00ff;
     }
 
-    /* Responsive tweaks */
     @media (max-width: 700px) {
       body {
         padding: 20px 10px;
@@ -58,14 +55,14 @@
         padding: 15px;
       }
       iframe {
-        height: 1400px; /* taller on small screens for scrolling */
+        height: 1400px; /* taller for small screens */
       }
     }
   </style>
 </head>
 <body>
   <div class="form-container" role="main">
-    <h1>Staff Application Form</h1>
+    <h1>Contact / Feedback Form</h1>
     <iframe 
       src="https://docs.google.com/forms/d/e/1FAIpQLSeOm7aldwmLU2IWk3EdnwmWpNXOahM7Njvb0Wo7poafC29WfA/viewform?embedded=true" 
       loading="lazy" 
